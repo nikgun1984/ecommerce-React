@@ -11,7 +11,7 @@ export const addItemToCart = (items, newItem) => {
 			if (item.id === newItem.id) {
 				return {
 					...item,
-					quantity: newItem.quantity + 1,
+					quantity: item.quantity + 1,
 				};
 			} else {
 				return item;
